@@ -5,16 +5,26 @@ Relates to [B19006-555](https://docs.google.com/spreadsheets/d/14XQJgJ_Fk2FqaAuy
 
 ## Project goals
 
+### Collect documentation
+
+- relevant literature
+- student project
+
 ### Assemble test / reference data
 
 - resulting from metabarcoding samples
 - following base calling, i.e. FASTQ
-- cover multiple test cases (e.g. 3 total)
+- cover multiple test cases (Arjen has data also run in Illumina)
 - can be deposited (under embargo?) on the SRA
+
+### Develop demultiplexing
+
+- shoehorn custom adaptors into demultiplexing tool
+- attempt to sort
 
 ### Assess clustering algorithms
 
-- which tools to use?
+- which tools to use? (Guppy? Rutger + Elza evaluate)
 - parameter exploration of divergence levels
 - tools collected in a docker container
 - clustering pipelines scripted in this repo
