@@ -25,7 +25,7 @@ Relates to [B19006-555](https://docs.google.com/spreadsheets/d/14XQJgJ_Fk2FqaAuy
 - map cluster against marker template (e.g. COI)
 - compute consensus with modal base per site
 - compute consensus with IUPAC ambiguity code
-- assess BLAST hist
+- assess BLAST hits
 - consensus building code in docker container
 - consensus building scripts in this repo
 - consensus building scripts wrapped in galaxy XML
