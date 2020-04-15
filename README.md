@@ -43,3 +43,4 @@ Relates to [B19006-555](https://docs.google.com/spreadsheets/d/14XQJgJ_Fk2FqaAuy
 ### Other resources
 
 - [Dutch Caribbean sampling trip project folder](https://drive.google.com/drive/folders/0AJciDEav_vtMUk9PVA)
+- [sample metadata sheet](https://docs.google.com/spreadsheets/d/1q1Q3AW5qvXCaXK5MO9jRTS8BdWyp5GQz9toH6hs0VhU/edit?ts=5e96c68e#gid=1654989386)
