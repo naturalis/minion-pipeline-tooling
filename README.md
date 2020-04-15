@@ -39,3 +39,7 @@ Relates to [B19006-555](https://docs.google.com/spreadsheets/d/14XQJgJ_Fk2FqaAuy
 - consensus building code in docker container
 - consensus building scripts in this repo
 - consensus building scripts wrapped in galaxy XML
+
+### Other resources
+
+- [Dutch Caribbean sampling trip project folder](https://drive.google.com/drive/folders/0AJciDEav_vtMUk9PVA)
