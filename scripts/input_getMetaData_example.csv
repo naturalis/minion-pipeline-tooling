@@ -1,0 +1,122 @@
+"","sample","in_replicate","species","lca.frequency"
+"1","0","B","Dasybranchus sp. DH1",11
+"2","1813","B","Limacina inflata",2
+"3","1814","A & B & C","Eurythenes gryllus",120
+"4","1816","B","Diadema antillarum",1
+"5","1823","A & B","Asymmetron lucayanum",5
+"6","1823","A & B & C","Ptychodera flava",22
+"7","1824","A & B & C","Asymmetron lucayanum",4462
+"8","1827","C","Asymmetron lucayanum",3
+"9","1827","A & B & C","Aspidosiphon laevis",11
+"10","1828","A","Gallus gallus",1
+"11","509","B","Coryphopterus venezuelae",8
+"12","539","A","Centropages violaceus",1
+"13","548","A","Creseis virgula",2
+"14","549","C","Ceratoscopelus warmingii",1
+"15","567","C","Antillogorgia acerosa",1
+"16","sxm_2018_1","B","Nanomia bijuga",1
+"17","sxm_2018_14","A & B & C","Amphinome rostrata",57
+"18","sxm_2018_15","B","Lensia campanella",1
+"19","sxm_2018_17","B","Aglaura hemistoma",1
+"20","sxm_2018_18","B","Meoma ventricosa",1
+"21","sxm_2018_18","B & C","Nanomia bijuga",2
+"22","sxm_2018_19","B","Diaphus garmani",1
+"23","sxm_2018_20","B","Amphinome rostrata",1
+"24","sxm_2018_23","B","Amphinome rostrata",2
+"25","sxm_2018_25","B","Delibus nudus",1
+"26","sxm_2018_26","B","Rhizophysa filiformis",1
+"27","sxm_2018_273","A & B","Homo sapiens",2131
+"28","sxm_2018_273","A","Arantia congensis",1
+"29","sxm_2018_273","A","Raphanus sativus",1
+"30","sxm_2018_28","B","Asymmetron lucayanum",1
+"31","sxm_2018_29","A & C","Lytechinus variegatus",6
+"32","sxm_2018_3","A","Gallus gallus",1
+"33","sxm_2018_3","A","Athorybia rosacea",1
+"34","sxm_2018_30","B & C","Euphausia tenera",4
+"35","sxm_2018_32","B","Lytechinus variegatus",1
+"36","sxm_2018_32","B","Tripneustes ventricosus",1
+"37","sxm_2018_344","A","Mithrodia clavigera",1
+"38","sxm_2018_360","A","Synanthedon culiciformis",1
+"39","sxm_2018_37","C","Cordagalma cordiforme",1
+"40","sxm_2018_38","C","Xanthichthys lineopunctatus",1
+"41","sxm_2018_41","B","Athorybia rosacea",1
+"42","sxm_2018_43","A","Pleuromamma piseki",1
+"43","sxm_2018_43","B","Euchaeta marina",1
+"44","sxm_2018_467","B","Arantia congensis",1
+"45","sxm_2018_49","A","Cyclothone sp.",1
+"46","sxm_2018_50","B","Cordagalma cordiforme",1
+"47","sxm_2018_50","B","Athorybia rosacea",1
+"48","sxm_2018_51","A & B","Cordagalma cordiforme",5
+"49","sxm_2018_51","A","Ogcocephalus vespertilio",1
+"50","sxm_2018_51","C","Eurythoe complanata",4
+"51","sxm_2018_51","C","Rhopalonema velatum",2
+"52","sxm_2018_52","A & C","Euchaeta marina",3
+"53","sxm_2018_52","A & B & C","Pleuromamma abdominalis",4
+"54","sxm_2018_53","A & B & C","Porroecia spinirostris",5
+"55","sxm_2018_55","B & C","Cordagalma cordiforme",3
+"56","sxm_2018_55","A","Athorybia rosacea",1
+"57","sxm_2018_56","C","Centropages violaceus",1
+"58","sxm_2018_58","B","Rhizophysa filiformis",1
+"59","sxm_2018_58","A & B","Cyclothone sp.",4
+"60","sxm_2018_58","A & B & C","Ophiocoma echinata",4
+"61","sxm_2018_58","B","Gymnothorax moringa",1
+"62","sxm_2018_6","B","Brassica nigra",1
+"63","sxm_2018_60","A & B & C","Lucicutia flavicornis",62
+"64","sxm_2018_69","B","Eurythenes gryllus",1
+"65","sxm_2018_74","A & B & C","Clausocalanus furcatus",530
+"66","sxm_2018_74","A & B & C","Aglaura hemistoma",1237
+"67","sxm_2018_74","C","Lytechinus variegatus",119
+"68","sxm_2018_74","B","Mithrodia clavigera",78
+"69","sxm_2018_74","B","Athorybia rosacea",4
+"70","sxm_2018_74","B","Euchaeta marina",1
+"71","sxm_2018_74","A & C","Diacavolinia longirostris",14
+"72","sxm_2018_74","A & B & C","Eudoxoides spiralis",17
+"73","sxm_2018_74","A & B & C","Palythoa cf. heliodiscus JDR-2017",592
+"74","sxm_2018_74","A & B & C","Pareucalanus sewelli",481
+"75","sxm_2018_74","A & B & C","Sparisoma viride",538
+"76","sxm_2018_74","A & B & C","Stylocheiron carinatum",4
+"77","sxm_2018_74","B","Liriope tetraphylla",23
+"78","sxm_2018_74","C","Haloptilus longicornis",3
+"79","sxm_2018_74","C","Undinula vulgaris",1
+"80","sxm_2018_75","A & B & C","Clausocalanus furcatus",8
+"81","sxm_2018_75","A & B & C","Ceratoscopelus warmingii",2073
+"82","sxm_2018_75","A & C","Nanomia bijuga",79
+"83","sxm_2018_75","C","Cyclothone sp.",842
+"84","sxm_2018_75","B","Rhopalonema velatum",38
+"85","sxm_2018_75","A","Porroecia spinirostris",1
+"86","sxm_2018_75","C","Ophiocoma echinata",66
+"87","sxm_2018_75","A & B","Lucicutia flavicornis",55
+"88","sxm_2018_75","A","Diacavolinia longirostris",2
+"89","sxm_2018_75","A & B","Stylocheiron carinatum",14
+"90","sxm_2018_75","B & C","Haloptilus longicornis",17
+"91","sxm_2018_75","A & B & C","Agalma okeni",480
+"92","sxm_2018_75","A & B & C","Apogon pillionatus",3193
+"93","sxm_2018_75","A","Diacavolinia sp. D ANW ECO 82 02",80
+"94","sxm_2018_75","A","Diacavolinia sp. D ASW AMT22 41 01",1
+"95","sxm_2018_75","A & B & C","Diphyes bojani",287
+"96","sxm_2018_75","A","Euphausia americana",1
+"97","sxm_2018_75","A & C","Halistemma sp. 1 BO2009",11
+"98","sxm_2018_75","A & B","Lampanyctus nobilis",1145
+"99","sxm_2018_75","A & B & C","Nannocalanus minor",648
+"100","sxm_2018_75","B & C","Eudoxoides mitra",3
+"101","sxm_2018_75","B","Metapenaeopsis sp. JC-2016",21
+"102","sxm_2018_75","B","Sparisoma atomarium",14
+"103","sxm_2018_75","C","Gnatholepis cauerensis",316
+"104","sxm_2018_75","C","Pleuromamma gracilis",49
+"105","sxm_2018_76","B & C","Diadema antillarum",14
+"106","sxm_2018_76","A & B & C","Clausocalanus furcatus",34
+"107","sxm_2018_76","A & C","Centropages violaceus",20
+"108","sxm_2018_76","B","Lensia campanella",2
+"109","sxm_2018_76","C","Aglaura hemistoma",146
+"110","sxm_2018_76","B & C","Nanomia bijuga",7
+"111","sxm_2018_76","A & C","Euphausia tenera",66
+"112","sxm_2018_76","B","Cordagalma cordiforme",2
+"113","sxm_2018_76","A","Eurythoe complanata",10
+"114","sxm_2018_76","A & B","Pleuromamma abdominalis",35
+"115","sxm_2018_76","B","Undinula vulgaris",2
+"116","sxm_2018_76","A","Nannocalanus minor",1
+"117","sxm_2018_76","A & B & C","Doliolum nationalis",7
+"118","sxm_2018_76","A & B","Malacanthus plumieri",20
+"119","sxm_2018_76","B","Antipathozoanthus cf. hickmani JDR-2012",27
+"120","sxm_2018_76","C","Cryptotomus roseus",9
+"121","unicon1","unicon1_C","Arantia congensis",1
