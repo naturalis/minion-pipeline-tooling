@@ -86,6 +86,7 @@ def getNaturalisApi(strSpeciesCommand, strOutputPath, strOtu, lstSpecies):
     strNaturalisUrl = getPictureUrl(strNaturalisCommand, "accessUri",
                                     strOutputPath, strOtu, lstSpecies,
                                     "NATURALIS")
+    return strNaturalisUrl
 
 # The getBoldApi function.
 # This function creates a api string with the provided name. This api string is
