@@ -3,6 +3,20 @@
 Tools for managing and automating analysis of MinION nanopore longreads
 Relates to [B19006-555](https://docs.google.com/spreadsheets/d/14XQJgJ_Fk2FqaAuyZOWalApxIOcrkr5V0KlYvKmkl6Q/edit?ts=5ca74201#gid=420939240) and this [MSc project proposal](https://docs.google.com/document/d/1eZRCKmotnMgoF08aTI3XvSKGO5fuuFFwqTTYFTFagEI/edit)
 
+## Minion pipeline and Saba/St. Eustatius environmental analysis with Illumina.
+### This repository contains.
+
+- Project report
+- Scripts
+  -R (scripts and markdowns)
+  -Python
+- Pipeline
+- File with commands used
+- Links to drive folders
+- Other relevant files
+
+The project report will reference to files in this repository, essentially serving as an appendix.
+
 ## Project goals
 
 ### Collect documentation
