@@ -8,8 +8,8 @@ Relates to [B19006-555](https://docs.google.com/spreadsheets/d/14XQJgJ_Fk2FqaAuy
 
 - Project report
 - Scripts
-  -R (scripts and markdowns)
-  -Python
+  - R (scripts and markdowns)
+  - Python
 - Pipeline
 - File with commands used
 - Links to drive folders
