@@ -33,7 +33,7 @@ Command for making custom blast database out of fasta sequences
 ## 6. PyCharm Command Nanofilt 
 Command to filter on 1500-4000 reads (in PyCharm terminal)
 
- NanoFilt -l 1500 --maxlength 4000 file.fastq > output.fastq
+    NanoFilt -l 1500 --maxlength 4000 file.fastq > output.fastq
 
 ## 7. Terminal command Blast 
 Command for assignming taxonomy to sequences using blastn
@@ -53,12 +53,17 @@ Command to filter out lambda CS DNA from reads
 
     NanoLyse --reference /home/arjen/lambda_reads/lambda_genome/chrL.fa input.fastq > output_no_lambda.fastq
 
-## 10. Terminal command minibar
+## 10. Terminal Command makeBarcodeFile.py (Script available under minion-pipeline-tooling/scripts)
+Command organizes the file in which primers, tags, and tails are listed into a file that is supplied to minibar
+
+    python ~/Documents/PycharmProjects/makeBarcodeFile.py -i File_1_Primers_tags_tails_Minion_pool.tsv -o File_2_tagsprimers.txt
+ 
+## 11. Terminal command minibar
 Command to demultiplex nanopore reads on custom primers and tags
 
     python3 minibar.py primerstags.txt input.fasta -p 0.8 -l 90
    
-## 11. Terminal Command cutadapt
+## 12. Terminal Command cutadapt
 Commands to remove primers and everything before/after primers
 
 commands are for a files within a folder that end with fastq. 
@@ -80,7 +85,7 @@ Round 2:
         –adapter TGRTTYTTYGGNCAYCCHGA –action trim –untrimmed-output untrimmed/untrimmedround2.fasta --overlap 10  -m 400 -M 440 -o trimmed.$file $file
     done
 
-## 12. Terminal Command VSEARCH
+## 13. Terminal Command VSEARCH
 Command for clustering sequences with vsearch
 command is for clustering round per file in folder 
 
@@ -102,13 +107,18 @@ for Illumina (default --gapopen and --gapext penalty)
         vsearch --cluster_fast $file --id 0.98 --iddef 0 --clusterout_id --sizein --relabel_keep --clusterout_sort --sizeout --sizeorder --centroids $file.centroids98 --consout $file.cons98 --msaout $file.msa98 --log $file.log98 
     done
 
-## 13 Terminal Command add_taxonomy
+## 14. Terminal Command add_taxonomy
 Command to add taxnonomy to blast output
 Will save output in directory you are currently in.
 
     python2 /home/arjen/blast_tools/galaxy-tool-BLAST/blastn_add_taxonomy_lite_edited.py -i input.blasted
 
+## Terminal Command addDummy.R
+Command adds dummy to all blast files in folder to which taxonomy was edited
 
+    addDummy.R -i taxonomyadded.input
+    
+    
 
 
 
