@@ -40,5 +40,22 @@ Command for assignming taxonomy to sequences using blastn
 
    blastn -query input.fasta -db database.fa -task megablast -num_threads 12 -max_hsps 1 -out out.blasated -outfmt "6 qseqid stitle sacc staxid pident qcovs evalue bitscore" -max_target_seqs 100 -perc_identity 70 -qcov_hsp_perc 70
 
-## 8. 
+## 8. Pycharm Command NanoPlot
+Command for making quality plots, readlength plots, and get statistics.
 
+    NanoPlot --fastq input.fastq
+## 9. Command NanoLyse
+Command to filter out lambda CS DNA from reads
+
+    NanoLyse --reference /home/arjen/lambda_reads/lambda_genome/chrL.fa input.fastq > output_no_lambda.fastq
+
+## 10. Command minibar
+Command to demultiplex nanopore reads on custom primers and tags
+
+   python3 minibar.py primerstags.txt input.fasta -p 0.8 -l 90
+   
+## 11. Command barcode file
+
+
+
+    
