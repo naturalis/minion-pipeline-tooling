@@ -38,23 +38,74 @@ Command to filter on 1500-4000 reads (in PyCharm terminal)
 ## 7. Terminal command Blast 
 Command for assignming taxonomy to sequences using blastn
 
+database for lambda reads: chrL.fa
+database for BOLD: /home/arjen/COI_db/BOLD/bold_all_sequences_taxonomy_species_only_nodups.fa
+database for Genbank: /home/arjen/COI_db/Genbank/CO1/CO1.fa
+
    blastn -query input.fasta -db database.fa -task megablast -num_threads 12 -max_hsps 1 -out out.blasated -outfmt "6 qseqid stitle sacc staxid pident qcovs evalue bitscore" -max_target_seqs 100 -perc_identity 70 -qcov_hsp_perc 70
 
 ## 8. Pycharm Command NanoPlot
 Command for making quality plots, readlength plots, and get statistics.
 
     NanoPlot --fastq input.fastq
-## 9. Command NanoLyse
+## 9. Terimnal Command NanoLyse
 Command to filter out lambda CS DNA from reads
 
     NanoLyse --reference /home/arjen/lambda_reads/lambda_genome/chrL.fa input.fastq > output_no_lambda.fastq
 
-## 10. Command minibar
+## 10. Terminal command minibar
 Command to demultiplex nanopore reads on custom primers and tags
 
    python3 minibar.py primerstags.txt input.fasta -p 0.8 -l 90
    
-## 11. Command barcode file
+## 11. Terminal Command cutadapt
+Commands to remove primers and everything before/after primers
+
+commands are for a files within a folder that end with fastq. 
+Round1:
+
+    # while in folder with fastq files:
+    for file in *.fastq
+    do 
+        cutadapt --front GCYCCYGAYATRGCYTTYCC --revcomp --action trim --match-read-wildcards --error-rate 0.2 --overlap 10 --untrimmed-output untrimmed/${file}.untrimmed --output trimmed/trimmed.${file} $file
+    done
+    
+    # move to folder with trimmed files
+    mv trimmed
+    
+Round 2:
+
+    for file in *.fastq
+    do 
+        –adapter TGRTTYTTYGGNCAYCCHGA –action trim –untrimmed-output untrimmed/untrimmedround2.fasta --overlap 10  -m 400 -M 440 -o trimmed.$file $file
+    done
+
+## 12. Terminal Command VSEARCH
+Command for clustering sequences with vsearch
+command is for clustering round per file in folder 
+
+id = percentage at which to cluster
+iddef = pairwise identity defintion used in --id (0 = CD HIT, see vsearch manual for other definitinos)
+gapopen/gapext = gap open and gap extension penalty for external and terminal gaps
+
+for Minion
+
+    for file in *
+    do 
+        vsearch --cluster_fast $file --id 0.97 --iddef 0  --gapopen 60I/4E --gapext 4I/2E --clusterout_id --sizein --relabel_keep --clusterout_sort --sizeout --sizeorder --centroids $file.centroids97 --consout $file.cons97 --msaout $file.msa97 --log $file.log97 
+    done
+    
+for Illumina (default --gapopen and --gapext penalty)
+
+    for file in *
+    do 
+        vsearch --cluster_fast $file --id 0.98 --iddef 0 --clusterout_id --sizein --relabel_keep --clusterout_sort --sizeout --sizeorder --centroids $file.centroids98 --consout $file.cons98 --msaout $file.msa98 --log $file.log98 
+    done
+
+## 13 Terminal Command Blastn
+
+
+
 
 
 
