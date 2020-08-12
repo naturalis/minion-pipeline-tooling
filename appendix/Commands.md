@@ -42,7 +42,7 @@ database for lambda reads: chrL.fa
 database for BOLD: /home/arjen/COI_db/BOLD/bold_all_sequences_taxonomy_species_only_nodups.fa
 database for Genbank: /home/arjen/COI_db/Genbank/CO1/CO1.fa
 
-   blastn -query input.fasta -db database.fa -task megablast -num_threads 12 -max_hsps 1 -out out.blasated -outfmt "6 qseqid stitle sacc staxid pident qcovs evalue bitscore" -max_target_seqs 100 -perc_identity 70 -qcov_hsp_perc 70
+    blastn -query input.fasta -db database.fa -task megablast -num_threads 12 -max_hsps 1 -out out.blasated -outfmt "6 qseqid stitle sacc staxid pident qcovs evalue bitscore" -max_target_seqs 100 -perc_identity 70 -qcov_hsp_perc 70
 
 ## 8. Pycharm Command NanoPlot
 Command for making quality plots, readlength plots, and get statistics.
@@ -56,7 +56,7 @@ Command to filter out lambda CS DNA from reads
 ## 10. Terminal command minibar
 Command to demultiplex nanopore reads on custom primers and tags
 
-   python3 minibar.py primerstags.txt input.fasta -p 0.8 -l 90
+    python3 minibar.py primerstags.txt input.fasta -p 0.8 -l 90
    
 ## 11. Terminal Command cutadapt
 Commands to remove primers and everything before/after primers
@@ -102,8 +102,11 @@ for Illumina (default --gapopen and --gapext penalty)
         vsearch --cluster_fast $file --id 0.98 --iddef 0 --clusterout_id --sizein --relabel_keep --clusterout_sort --sizeout --sizeorder --centroids $file.centroids98 --consout $file.cons98 --msaout $file.msa98 --log $file.log98 
     done
 
-## 13 Terminal Command Blastn
+## 13 Terminal Command add_taxonomy
+Command to add taxnonomy to blast output
+Will save output in directory you are currently in.
 
+    python2 /home/arjen/blast_tools/galaxy-tool-BLAST/blastn_add_taxonomy_lite_edited.py -i input.blasted
 
 
 
