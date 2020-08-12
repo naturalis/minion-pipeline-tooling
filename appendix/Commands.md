@@ -85,7 +85,17 @@ Round 2:
         –adapter TGRTTYTTYGGNCAYCCHGA –action trim –untrimmed-output untrimmed/untrimmedround2.fasta --overlap 10  -m 400 -M 440 -o trimmed.$file $file
     done
 
-## 13. Terminal Command VSEARCH
+## 13. Terminal Command UCHIME chimera check
+Command checks for chimeras denovo, that is: it compares abundance of reads to construct a self made database of non chimera reads.
+This command is for all files in a directory that contain .fastq
+
+    for file in *.fastq
+    do 
+        vsearch --uchime_denovo $file --chimeras $file.chimeras --nonchimeras $file.nonchimeras --sizeout
+    done
+    
+    
+## 14. Terminal Command VSEARCH
 Command for clustering sequences with vsearch
 command is for clustering round per file in folder 
 
@@ -99,6 +109,10 @@ for Minion
     do 
         vsearch --cluster_fast $file --id 0.97 --iddef 0  --gapopen 60I/4E --gapext 4I/2E --clusterout_id --sizein --relabel_keep --clusterout_sort --sizeout --sizeorder --centroids $file.centroids97 --consout $file.cons97 --msaout $file.msa97 --log $file.log97 
     done
+   
+for Illumina
+
+    vsearch --cluster_fast combined.fasta --id 0.98 --iddef 0 --centroids combined.centroids98.fasta --clusterout_id --sizein --consout combined.cons98.fasta  --clusterout_sort --sizeout --sizeorder --msaout combined.msa98 --log combined.log98 --otutabout otu.about
     
 for Illumina (default --gapopen and --gapext penalty)
 
@@ -107,19 +121,55 @@ for Illumina (default --gapopen and --gapext penalty)
         vsearch --cluster_fast $file --id 0.98 --iddef 0 --clusterout_id --sizein --relabel_keep --clusterout_sort --sizeout --sizeorder --centroids $file.centroids98 --consout $file.cons98 --msaout $file.msa98 --log $file.log98 
     done
 
-## 14. Terminal Command add_taxonomy
+## 15. Terminal Command add_taxonomy
 Command to add taxnonomy to blast output
 Will save output in directory you are currently in.
 
     python2 /home/arjen/blast_tools/galaxy-tool-BLAST/blastn_add_taxonomy_lite_edited.py -i input.blasted
 
-## Terminal Command addDummy.R
+## 16.Terminal Command addDummy.R
 Command adds dummy to all blast files in folder to which taxonomy was edited
 
     addDummy.R -i taxonomyadded.input
     
+## 17. Terminal Command lca.py
+Command executes lca analysis on blast output with taxonomy added and 10 columns
+
+    lca.py -i taxonomy.fasta.dummyadded -o lca.output -b 8 -id 70 -cov 70 -t best_hitrange -tid 98 -tcov 99 -fh "environmental" -flh "unknown"
+
+## 18. Terminal Command barplots (script available in minion-pipeline-tooling/scripts/barplots.R)
+Command that makes barkplots from the lcas at different clustering percentages.
+The input must be a folder with LCAs
+
+    barplots.R -i ~/lca/all/forbarplot -o barplot.output -t all --log10 TRUE
+
+## 19. Terminal Command venn diagram (script available in minion-pipeline-tooling/scripts/vennOverlap.R)
+Command calls script that makes a venn diagram of overlapping reads between 2 or 3 methods, and outputs lists with the identifications
+
+     vennOverlap.R -i /home/arjen/unclusteredboth/presentation_venn/cons80-unclu-centroids97 -t all -o output
+    
+## 20. Terminal command merge replicates (script available in minion-pipeline-tooling/scripts/mergeReplicates.py)
+Command calls script that merged the replicates in a folder (if utilize _A_ _B_ _C_ format to indicate replicate)
+
+    python mergeReplicates.py -i input.folder
+    
+## 21. Terminal command add samplename to headers in fasta file
+Commands to make a new directory in which the files will end up, and then prepend sample name to fasta header
+
+    mkdir changedheader
+
+    for FILE in *.fasta; do  awk '/^>/{sub(">","&"FILENAME":");sub(/\.fasta/,x)}1' $FILE > changedheader/changed_${FILE}; done
+
+## 22. Terminal command combine contents of file
+
+    cat *.fasta > out.fasta
     
 
+    
+## additional commands
+From fastq to fasta:
 
+    sed -n '1~4s/^@/>/p;2~4p' in.fastq > out.fasta
+    
 
     
