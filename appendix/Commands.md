@@ -60,6 +60,8 @@ Command organizes the file in which primers, tags, and tails are listed into a f
  
 ## 11. Terminal command minibar
 Command to demultiplex nanopore reads on custom primers and tags
+-p is the percent idendity with which the primers have to match (-e for ma
+-l is the number of bases from ends of read that mininbar searches in for primer
 
     python3 minibar.py primerstags.txt input.fasta -p 0.8 -l 90
    
@@ -122,17 +124,17 @@ for Illumina (default --gapopen and --gapext penalty)
     done
 
 ## 15. Terminal Command add_taxonomy
-Command to add taxnonomy to blast output
+Command to add taxnonomy to blast output (BOLD only, this edited script does not require a json file for genbank taxonomy)
 Will save output in directory you are currently in.
 
     python2 /home/arjen/blast_tools/galaxy-tool-BLAST/blastn_add_taxonomy_lite_edited.py -i input.blasted
 
-## 16.Terminal Command addDummy.R
+## 16.Terminal Command addDummy.R (script available under minion-pipeline-tooling/scripts)
 Command adds dummy to all blast files in folder to which taxonomy was edited
 
     addDummy.R -i taxonomyadded.input
     
-## 17. Terminal Command lca.py
+## 17. Terminal Command lca.py (script in naturlis github > galaxy-tool-lca)
 Command executes lca analysis on blast output with taxonomy added and 10 columns
 
     lca.py -i taxonomy.fasta.dummyadded -o lca.output -b 8 -id 70 -cov 70 -t best_hitrange -tid 98 -tcov 99 -fh "environmental" -flh "unknown"
