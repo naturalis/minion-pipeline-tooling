@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/208031235.svg)](https://zenodo.org/badge/latestdoi/208031235)
+
 # minion-pipeline-tooling
 
 Tools for managing and automating analysis of MinION nanopore longreads
