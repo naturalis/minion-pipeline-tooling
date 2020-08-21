@@ -16,8 +16,9 @@ Relates to [B19006-555](https://docs.google.com/spreadsheets/d/14XQJgJ_Fk2FqaAuy
 - File with commands used
 - Links to drive folders
 - Other relevant files
+- Presentations 
 
-The project report will reference to files in this repository, essentially serving as an appendix.
+The project report will reference to files in this repository, which serves as an appendix.
 
 ## Project goals
 
