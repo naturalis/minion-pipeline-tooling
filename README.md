@@ -1,4 +1,5 @@
-[![DOI](https://zenodo.org/badge/208031235.svg)](https://zenodo.org/badge/latestdoi/208031235)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3992310.svg)](https://doi.org/10.5281/zenodo.3992310)
+
 
 # minion-pipeline-tooling
 
