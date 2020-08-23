@@ -8,7 +8,7 @@ Relates to [B19006-555](https://docs.google.com/spreadsheets/d/14XQJgJ_Fk2FqaAuy
 ## Minion pipeline and Saba/St. Eustatius environmental analysis with Illumina.
 ### This repository contains.
 
-- Project report
+- Project report (available in docs)
 - Scripts
   - R (scripts and markdowns)
   - Python
